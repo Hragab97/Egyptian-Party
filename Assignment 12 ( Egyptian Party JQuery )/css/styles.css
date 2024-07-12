@@ -1,0 +1,242 @@
+
+/* GLOBAL */
+*{
+    scroll-behavior: smooth;
+}
+
+/* HOME */
+
+.home {
+    background-image:linear-gradient(rgba(214, 46, 51, 0.6),rgba(214, 46, 51, 0.6)), url('../assets/events-heavenly-header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sideBar li {
+    list-style-type: none;
+}
+.sideBar li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.sideBar li a:hover {
+    color:rgb(158, 20, 24) ;
+}
+
+aside {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+aside ul {
+    width: 70%;
+}
+
+.openBar, .close {
+    cursor: pointer;
+}
+
+.close .fa-x {
+    top: 50px;
+    bottom: 0;
+    right: 50px;
+}
+
+.close {
+    transition: 0.3s ease;
+}
+
+.close:hover {
+    color:rgb(158, 20, 24) ;
+}
+
+/* DETAILS */
+
+#singerDown {
+    margin-bottom: 170px;
+    z-index: 1;
+}
+
+#singerDown h3 {
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: rgb(214, 46, 51);
+    cursor: pointer;
+    color: white;
+}
+
+#singerDown .inner {
+    padding: 10px;
+    margin-bottom: 4px;
+    background-color: #ccc;
+    display: none;
+}
+
+#singerDown .first {
+    display: block;
+}
+
+/* DURATION */
+
+.countdown {
+    background-image:linear-gradient(rgba(214, 46, 51, 0.6),rgba(214, 46, 51, 0.6)), url('../assets/invitation-2508607__340.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.single-countdown {
+    display: inline-block;
+    padding: 50px;
+    margin: 50px;
+    border:5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.5s ease;
+    cursor: progress;
+}
+
+.single-countdown:hover {
+    transform: scale(1.1);
+}
+
+
+/* CONTACT */
+#contact .head-contact h2 {
+    font-size: 36px;
+    color:#444;
+    margin-bottom: 20px;
+}
+
+#contact .head-contact p {
+    font-weight: 300;
+    color:#777;
+    font-size: 18px;
+}
+
+#contact .contact-info h3 {
+    color:#444;
+    font-size: 20px;
+}
+
+#contact .contact-info p {
+    color:#444;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+#contact .icons {
+    margin-top:50px;
+}
+#contact .icons p {
+    margin-bottom: 35px;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    #contact .contact-info p {
+        text-align: start;
+    }
+    #contact .icons p{
+    text-align: center;
+    }
+}
+
+#contact .icons i{
+    margin-right: 20px;
+    color:#D62E33;
+}
+
+#contact .icons p:nth-child(2){
+    color:#D62E33 !important;
+}
+
+#contact .contact-info .social-list {
+    margin-top:50px;
+    margin-bottom:10px;
+    color:#777;
+}
+
+.fa-twitter,.fa-facebook-f,.fa-instagram,.fa-dribbble,.fa-pinterest {
+    padding: 10px;
+    margin-right: 10px;
+    border:1px solid #999;
+    width:50px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+}
+
+.fa-twitter:hover {
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+.fa-facebook-f:hover {
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+.fa-instagram:hover {
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+.fa-pinterest:hover {
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+.fa-dribbble:hover {
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 20px;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #D62E33;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+#contact form textarea{
+    height: 200px;
+    resize:vertical;
+}
+
+#contact #chars {
+    font-size: 20px;
+    color: #D62E33;
+}
+
+#contact form button{
+    background-color: #f05055;
+    color:#fff;
+    padding:10px 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#contact form button:hover {
+    background-color: #D62E33;
+}
